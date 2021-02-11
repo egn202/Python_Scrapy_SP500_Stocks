@@ -13,6 +13,7 @@ class YhooSummary(Spider):
     def parse(self, response):
         rows = response.xpath('//td[@class="Ta(end) Fw(600) Lh(14px)"]//text()')
 
+        px = response.xpath('//span[@class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)"]//text()').extract()
         name_tk = response.xpath('//h1[@class="D(ib) Fz(18px)"]//text()').extract()
         _52wkrange = rows[5].extract()
         avg_vol = rows[7].extract()
@@ -24,6 +25,7 @@ class YhooSummary(Spider):
         _1YTargetEst = rows[17].extract()
 
         item = YhooSummaryItem()
+        item['px'] = px
         item['name_tk'] = name_tk
         item['_52wkrange'] = _52wkrange
         item['avg_vol'] = avg_vol

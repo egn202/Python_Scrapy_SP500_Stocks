@@ -9,6 +9,7 @@ import scrapy
 class YhooSummaryItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    px = scrapy.Field()
     name_tk = scrapy.Field()
     _52wkrange = scrapy.Field()
     avg_vol = scrapy.Field()
