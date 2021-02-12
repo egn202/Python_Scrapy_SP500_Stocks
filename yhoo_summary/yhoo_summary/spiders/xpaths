@@ -1,3 +1,23 @@
+#profile
+address = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[1]/text()').extract()
+sector = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[2]/text()').extract()
+industry = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[4]/text()').extract()
+employees = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[6]/span/text()').extract()
+exec1_name = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[1]/td[1]/span/text()').extract()
+exec1_title = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[1]/td[2]/span/text()').extract()
+exec1_pay = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[1]/td[3]/span/text()').extract()
+exec1_born = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[1]/td[5]/span/text()').extract()
+exec2_name = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[2]/td[1]/span/text()').extract()
+exec2_title = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[2]/td[2]/span/text()').extract()
+exec2_pay = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[2]/td[3]/span/text()').extract()
+exec2_born = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[2]/td[5]/span/text()').extract()
+exec3_name = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[3]/td[1]/span/text()').extract()
+exec3_title = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[3]/td[2]/span/text()').extract()
+exec3_pay = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[3]/td[3]/span/text()').extract()
+exec3_born = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[1]/table/tbody/tr[3]/td[5]/span/text()').extract()
+govscore = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/section[3]/div/p/span[2]/text()').extract()
+
+
 #sustainability page
 
 esg_score = response.xpath('//div[@class="Fz(36px) Fw(600) D(ib) Mend(5px)"]/text()').extract()
@@ -9,7 +29,7 @@ gov_risk = response.xpath('//div[@class="D(ib) Fz(23px) smartphone_Fz(22px) Fw(6
 #statistics page
 
 shares_out = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[9].extract()
-float = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[10].extract()
+sh_float = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[10].extract()
 insiders = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[11].extract()
 institution = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[12].extract()
 sh_short = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[13].extract()
