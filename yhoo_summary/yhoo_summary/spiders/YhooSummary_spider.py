@@ -12,7 +12,6 @@ class YhooSummary(Spider):
 
     def parse(self, response):
         rows = response.xpath('//td[@class="Ta(end) Fw(600) Lh(14px)"]//text()')
-
         px = response.xpath('//span[@class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)"]//text()').extract()
         name_tk = response.xpath('//h1[@class="D(ib) Fz(18px)"]//text()').extract()
         _52wkrange = rows[5].extract()
@@ -21,8 +20,8 @@ class YhooSummary(Spider):
         beta = rows[9].extract()
         PE = rows[10].extract()
         EPS = rows[11].extract()
-        DivYld = rows[15].extract()
-        _1YTargetEst = rows[17].extract()
+        DivYld = response.xpath('//*[@id="quote-summary"]/div[2]/table/tbody/tr[6]/td[2]/text()').extract()
+        _1YTargetEst = response.xpath('//*[@id="quote-summary"]/div[2]/table/tbody/tr[8]/td[2]/span/text()').extract()  
 
         item = YhooSummaryItem()
         item['px'] = px
@@ -35,7 +34,7 @@ class YhooSummary(Spider):
         item['EPS'] = EPS
         item['DivYld'] = DivYld
         item['_1YTargetEst'] = _1YTargetEst
-
+        
         yield item
 
 

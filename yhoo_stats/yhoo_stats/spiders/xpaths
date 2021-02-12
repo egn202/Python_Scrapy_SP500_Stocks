@@ -1,0 +1,43 @@
+#sustainability page
+
+esg_score = response.xpath('//div[@class="Fz(36px) Fw(600) D(ib) Mend(5px)"]/text()').extract()
+env_risk = response.xpath('//div[@class="D(ib) Fz(23px) smartphone_Fz(22px) Fw(600)"]/text()')[0].extract()
+social_risk = response.xpath('//div[@class="D(ib) Fz(23px) smartphone_Fz(22px) Fw(600)"]/text()')[1].extract()
+gov_risk = response.xpath('//div[@class="D(ib) Fz(23px) smartphone_Fz(22px) Fw(600)"]/text()')[2].extract()
+
+
+#statistics page
+
+shares_out = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[9].extract()
+float = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[10].extract()
+insiders = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[11].extract()
+institution = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[12].extract()
+sh_short = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[13].extract()
+short_ratio = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[14].extract()
+short_to_float = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[15].extract()
+short_to_out = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[16].extract()
+fwd_div = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[18].extract()
+fwd_div_yld = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[19].extract()
+trail_
+5Y_div_yld = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[22].extract()
+payout_ratio = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[23].extract()
+profit_margin = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[30].extract()
+oper_margin = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[31].extract()
+ROA = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[32].extract()
+ROE = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[33].extract()
+Rev = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[34].extract()
+rev_sh = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[35].extract()
+Q_rev_gr = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[36].extract()
+gross_profit = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[37].extract()
+EBITDA = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[38].extract()
+NI = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[39].extract()
+EPS = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[40].extract()
+Q_earnings_gr = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[41].extract()
+cash = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[42].extract()
+cash_per_sh = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[43].extract()
+debt = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[44].extract()
+debt_to_eq = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[45].extract()
+curr_ratio = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[46].extract()
+bv_per_sh = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[47].extract()
+op_cf = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[48].extract()
+fcf = response.xpath('//td[@class="Fw(500) Ta(end) Pstart(10px) Miw(60px)"]//text()')[49].extract()

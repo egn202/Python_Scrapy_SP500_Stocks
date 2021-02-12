@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'yhoo_summary'
+BOT_NAME = 'yhoo_stats'
 
-SPIDER_MODULES = ['yhoo_summary.spiders']
-NEWSPIDER_MODULE = 'yhoo_summary.spiders'
+SPIDER_MODULES = ['yhoo_stats.spiders']
+NEWSPIDER_MODULE = 'yhoo_stats.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -63,7 +63,7 @@ DOWNLOAD_DELAY = 1
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'yhoo_summary.pipelines.WriteItemPipeline': 300,
+   'yhoo_stats.pipelines.WriteItemPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
