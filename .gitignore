@@ -1,6 +1,7 @@
 #Data files
 *.csv
 *.xlxs
+*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
