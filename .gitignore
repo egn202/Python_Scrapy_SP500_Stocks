@@ -1,7 +1,8 @@
-#Data files
+#Data and scratch files
 *.csv
-*.xlxs
+*.xlsx
 *.pdf
+/archive
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
