@@ -1,3 +1,7 @@
+#summary
+rec rating = //*[@id="Col2-8-QuoteModule-Proxy"]/div/section/div/div/div[1]
+
+
 #profile
 address = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[1]/text()').extract()
 sector = response.xpath('//*[@id="Col1-0-Profile-Proxy"]/section/div[1]/div/div/p[2]/span[2]/text()').extract()
